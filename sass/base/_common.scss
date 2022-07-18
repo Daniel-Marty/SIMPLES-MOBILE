@@ -38,7 +38,9 @@ body {
   left:3%;
 }
 .color__item{
+
   margin-bottom: 5px;
+  display: inline-block;
   display: flex;
   align-items: center;
   
@@ -61,6 +63,15 @@ body {
     border-radius: 5px;
     // box-shadow: 0px 0px 25px 12px white;
     transition: 500ms var(--cubic-bezier);
+}
+.color__blue{
+  box-shadow: rgb(0, 87, 250) 0px 0px 4px 3px, white 0px 0px 10px 5px;
+}
+.color__green {
+  box-shadow: rgb(19, 246, 49) 0px 0px 4px 3px, rgb(255, 255, 255) 0px 0px 10px 5px;
+}
+.color__red {
+  box-shadow: rgb(255, 5, 5) 0px 0px 4px 3px, rgb(255, 255, 255) 0px 0px 10px 5px;
 }
 
 .text_area {

@@ -15,16 +15,15 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css">
-    <title>Document</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <title>Simples-Mobile</title>
 </head>
 
 <body>
 
    <div class="wrapper">
     <header class="header">
-    <div class="container">
-        <div class="header__body">
-            
+    <!-- <div class="container">
             <nav class="header__menu">
                 <ul class="header__list">
                     <li><a href="" class="header__link">Present Simple</a></li>
@@ -32,20 +31,18 @@
                     <li><a href="" class="header__link">Future Simple</a></li>
                 </ul>
             </nav>
-            <div class="header__burger">
-                <span></span>
-            </div>
-        </div>
     </div>
+    <div class="header__burger" id="burger">
+        <span></span>
+    </div> -->
     </header>
-    <div>
-        <div class="container">
+    
             <ul class="colors__list" id="colorsList">
-                <li class="color__item"><img class="color__blue" id="colorBlue" src="./images-marks/blue.jpg" alt="color" width="40">
+                <li class="color__item" id="colorBlue"><img class="color__blue"  src="./images-marks/blue.jpg" alt="color" width="30">
                 <p class="color__text">SIMPLE PAST</p></li>
-                <li class="color__item"><img class="color__blue" id="colorBlue" src="./images-marks/green.jpg" alt="color" width="40">
+                <li class="color__item" id="colorGreen"><img class="color__green"  src="./images-marks/green.jpg" alt="color" width="30">
                 <p class="color__text">SIMPLE PRESENT</p></li>
-                <li class="color__item"><img class="color__blue" id="colorBlue" src="./images-marks/red.jpg" alt="color" width="40">
+                <li class="color__item" id="colorRed"><img class="color__red"  src="./images-marks/red.jpg" alt="color" width="30">
                 <p class="color__text">SIMPLE FUTURE</p></li>
             </ul>
 
@@ -53,26 +50,39 @@
             <img class="generate__button" id="generateButton" src="./images-marks/generate.png" alt="GENERATE" height="40">
         <ul class="content">
             <li class="content__item"><p class="text questionWord">Question word</p></li>
-            <li class="content__item"><img class="" id='subject' src="./images-subject/cat.jpg" alt="subject" width="140"></li>
+            <li class="content__item"><div class="verb"><img class="" id='subject' src="./images-subject/cat.jpg" alt="subject" width="140"><div class="overlay">
+                <p class="verbPrompt" id="subjectPrompt">subject name</p>
+            </div></div>
+            
+        </li>
             <li class="content__item hidden">
                 <p class="text firstConnectionWord" id="firstConnection">connection word</p>
             </li>
             <li class="content__item"><div id="verb" class="verb"><img class="" id='verbPic'
                     src="./images-verbs/fight.gif" alt="VERB" width="150">
-                    <div class="verb__overlay">
-                        <p class="verbPrompt">verb name</p>
+                    <div class="overlay">
+                        <p class="verbPrompt" id="verbPrompt">verb name</p>
                     </div></div></li>
             <li class="content__item"><p class="text timeMarker">time marker</p></li>
         </ul>
         
-        </div>
-    </div>
    </div>
    <ul>
     <li><p class="text_area" id="textSolution">This is where you will see the solution</p></li>
     <li></li>
    </ul>
-
+<div class="container">
+    <nav class="header__menu">
+        <ul class="header__list">
+            <li><a href="" class="header__link">Present Simple</a></li>
+            <li><a href="" class="header__link">Past Simple</a></li>
+            <li><a href="" class="header__link">Future Simple</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="header__burger" id="burger">
+    <span></span>
+</div>
 <p class="text textArea__question" id="textAreaQuestion">?</p>
     <script src="./js/simples.js"></script>
 </body>
